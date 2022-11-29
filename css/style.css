@@ -38,7 +38,7 @@ main {
 }
 
 .robo {
-    height: 110%;
+    height: 80%;
     z-index: 1;
     position: absolute;
     left: -20%;
