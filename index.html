@@ -15,9 +15,25 @@
 </head>
 <body>
 <main>
+
+
+
     <section class="robotron">
-        <img class="robo" src="img/robotron.png" alt="Robotron">
+        <img class="robo" src="cores/preto.png" alt="Robotron">
         <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
+    </section>
+
+    <section class="cores">
+        <h2>Escolha a cor do seu Robotron:</h2>
+        <button class='alterar' data-alterar onclick="trocaImagem('amarelo')">amarelo</button>
+        <button class='alterar' data-alterar onclick="trocaImagem('azul')">azul</button>
+        <button class='alterar' data-alterar onclick="trocaImagem('branco')">branco</button>
+        <button class='alterar' data-alterar onclick="trocaImagem('preto')">preto</button>
+        <button class='alterar' data-alterar onclick="trocaImagem('rosa')">rosa</button>
+        <button class='alterar' data-alterar onclick="trocaImagem('vermelho')">vermelho</button>
+
+        <img src="cores/preto.png" alt="Robotron" class="robo">
+        
     </section>
 
     <section class="box estatisticas">

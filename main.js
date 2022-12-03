@@ -1,6 +1,5 @@
 const controle = document.querySelectorAll('[data-controle]');
 const estatisticas = document.querySelectorAll('[data-estatistica]')
-console.log(estatisticas)
 
 const pecas = {
     "bracos": {
@@ -36,6 +35,7 @@ const pecas = {
     }
 };
 
+
 //função anônima pode ser chamada por () => {} (arrow function)
 controle.forEach( (elemento) => {
     elemento.addEventListener('click', (evento) =>  {
@@ -62,4 +62,8 @@ function atualizaEstatisticas(peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 };
+
+function trocaImagem(cor) {
+    document.querySelector('.robo').src='cores/' + cor + '.png';
+}
 
